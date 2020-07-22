@@ -3,8 +3,16 @@ def congratulate_salary(message, name_list, salary, bonus):
         b = bonus*salary
     else:
         b = bonus      
-    for a in name_list:
-        n = a.title()
-        d = int(salary + b)
-        f = str(d)
-        return (message.capitalize() + ' ' + n + ' ' + f)
+    d = int(salary + b)
+    f = str(d)
+    nl = []
+    if (len(name_list) == 1):
+        for i in name_list:
+            names = i.title()
+        return (message.capitalize() + ' ' + names + ' ' + f)
+    else:
+        for i in name_list:
+            names = i.title()
+            nl.append(message.capitalize() + ' ' + names + ' ' + f)
+        return nl    
+print(congratulate_salary(message="Ваш доход", name_list=["Петр", "Иван"], salary=10000, bonus=2000))
