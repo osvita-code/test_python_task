@@ -15,4 +15,3 @@ def congratulate_salary(message, name_list, salary, bonus):
             names = i.title()
             nl.append(message.capitalize() + ' ' + names + ' ' + f)
         return nl    
-print(congratulate_salary(message="Ваш доход", name_list=["Петр", "Иван"], salary=10000, bonus=2000))
