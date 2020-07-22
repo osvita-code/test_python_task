@@ -14,5 +14,3 @@ def salary_remind(message, start_day, in_days, name_list):
             names = i.title()
             names_list.append(message + ", " + names + ", " + date.strftime("%Y-%m-%d"))
         return names_list
-
-print(salary_remind(message="Ваша зарплата", start_day="2020-07-24", in_days=1, name_list=["Владимир"]))
