@@ -5,5 +5,6 @@ def congratulate_salary(message, name_list, salary, bonus):
         b = bonus      
     for a in name_list:
         n = a.title()
-        print(message.title() + ' ' + n + salary + b)
-    return
+        d = int(salary + b)
+        f = str(d)
+        return (message.capitalize() + ' ' + n + ' ' + f)
