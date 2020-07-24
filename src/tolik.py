@@ -1,6 +1,6 @@
 def congratulate_salary(message, name_list, salary, bonus):
-    if type(bonus)==type(float()):
-        b = bonus*salary
+    if type(bonus) == type(float()):
+        b = bonus * salary
     else:
         b = bonus      
     d = int(salary + b)
