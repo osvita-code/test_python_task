@@ -1,5 +1,5 @@
 def congratulate_salary(message, name_list, salary, bonus):
-    if isinstance(bonus, float) :
+    if isinstance(bonus, float):
         b = bonus * salary
     else:
         b = bonus
