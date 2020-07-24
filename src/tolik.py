@@ -1,8 +1,8 @@
 def congratulate_salary(message, name_list, salary, bonus):
-    if type(bonus) == type(float()):
+    if isinstance(bonus, float) :
         b = bonus * salary
     else:
-        b = bonus      
+        b = bonus
     d = int(salary + b)
     f = str(d)
     nl = []
@@ -14,4 +14,4 @@ def congratulate_salary(message, name_list, salary, bonus):
         for i in name_list:
             names = i.title()
             nl.append(message.capitalize() + ' ' + names + ' ' + f)
-        return nl    
+        return nl
